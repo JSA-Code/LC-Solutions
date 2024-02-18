@@ -42,7 +42,6 @@ function containsDuplicate2(nums: number[]): boolean {
   const sort = nums.sort();
   return sort.some((elm, i) => elm === sort[i + 1]);
 }
-
 // console.log(containsDuplicate2([1, 2, 3, 1]));
 
 // Valid Anagram
@@ -129,7 +128,6 @@ function groupAnagrams3(strs: string[]): string[][] {
   }
   return Array.from(map.values());
 }
-
 // console.log(groupAnagrams3(["eat", "tea", "tan", "ate", "nat", "bat"]));
 
 // Top K Frequent Elements

@@ -84,17 +84,17 @@ function getExampleObject(arr: { name: string; age: number }[]): number {
   ).age;
   return totalAge / arr.length;
 }
-const arr1 = [
-  { name: "John", age: 25 },
-  { name: "Pete", age: 30 },
-  { name: "Mary", age: 29 },
-];
-// console.log(getAverageAge(arr1)); // (25 + 30 + 29) / 3 = 28
+// console.log(
+//   getAverageAge([
+//     { name: "John", age: 25 },
+//     { name: "Pete", age: 30 },
+//     { name: "Mary", age: 29 },
+//   ])
+// ); // (25 + 30 + 29) / 3 = 28
 
 function unique(arr: string[]): string[] {
   return arr.filter((item, index) => index === arr.indexOf(item));
 }
-
 let strings = [
   "Hare",
   "Krishna",
@@ -106,7 +106,6 @@ let strings = [
   "Hare",
   ":-O",
 ];
-
 // console.log(unique(strings));
 
 const users1 = [
