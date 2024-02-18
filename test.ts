@@ -81,24 +81,23 @@ const salaries = {
 function topPerson(arr: [string, number][]): string {
   return arr.reduce((prev, curr) => (prev[1] >= curr[1] ? prev : curr))[0];
 }
-// const people: [string, number][] = [
-//   ["John", 100],
-//   ["Mary", 500],
-//   ["Leo", 250],
-// ];
+const people: [string, number][] = [
+  ["John", 100],
+  ["Mary", 500],
+  ["Leo", 250],
+];
 // console.log(topPerson(people)); // Mary
 
 function sum(items: { x: number }[]): number {
   return items.reduce((prev, curr) => prev + curr.x, 0);
 }
-// const obj = [{ x: 1 }, { x: 2 }, { x: 3 }];
-// console.log(sum(obj)); // 6
+const objNum = [{ x: 1 }, { x: 2 }, { x: 3 }];
+// console.log(sum(objNum)); // 6
 
 const props = [
   { id: 1, word: "Fizz" },
   { id: 2, word: "Buzz" },
   { id: 3, word: "FizzBuzz" },
 ];
-
 const [, , { word }] = props;
 // console.log(word); // "FizzBuzz"
